@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Room</title>
+</head>
+<body>
+
+<h1>New Room</h1>
+<p>Use this web interface to add new rooms to the room inventory.</p>
+<p>Must use existing room types. If new room type, create new room type in the Add Room Type Menu.</p>
+<br>
+<br>
+<p>RoomType Key: 1-Single Queen, 2-Single King, 3-Double Queen, 4-Double King, 5-Jr. Suite, 6-Deluxe Suite, 7-Single Queen ADA, 8-Single King ADA</p>
+
+</body>
+</html>
+
+<form action="newroom.php">
+    <label for "roomNum">New Room Number:</label><br>
+    <input type="int" id="roomNum" name="roomNum"><br>
+    <label for "roomType_id_roomType">New Room Type:</label><br>
+    <input type="text" id="roomType_id_roomType" name="roomType_id_roomType"><br>
+    <input type="submit" value="Submit">
+</form>

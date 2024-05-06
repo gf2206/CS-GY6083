@@ -1,0 +1,18 @@
+<?php
+$id_guest = $_GET["id_guest"];
+?>
+
+
+<form action="addnewres.php">
+    <label for "source">Source:</label><br>
+    <input type="text" id="source" name="source"><br>
+    <label for "resDate">Reservation Date:</label><br>
+    <input type="text" id="resDate" name="resDate"><br>
+    <label for "checkInDate">Check In Date:</label><br>
+    <input type="text" id="checkInDate" name="checkInDate"><br>
+    <label for "checkOutDate">Check Out Date:</label><br>
+    <input type="text" id="checkOutDate" name="checkOutDate"><br>
+    <label for="id_guest">Guest ID:</label><br>
+    <input type="text" id="id_guest" name="id_guest" value="<?php echo $id_guest; ?>"><br>
+    <input type="submit" value="Submit">
+</form>

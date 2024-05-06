@@ -1,0 +1,30 @@
+<?php
+include "dbconn.php";
+
+$sql = "SELECT id_guest FROM u778390814_FinalProj1.guest where id_guest = ?";
+$id_guest = $_REQUEST["id_guest"];
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i",$id_guest);
+$stmt->execute();
+$result = $stmt->get_result();
+if ($result->num_rows >0) {
+    $row = $result->fetch_assoc();
+}
+?>
+
+<form action="addnewres.php">
+    <label for "source">Source:</label><br>
+    <input type="text" id="source" name="source"><br>
+    <label for "resDate">Reservation Date:</label><br>
+    <input type="text" id="resDate" name="resDate"><br>
+    <label for "checkInDate">Check In Date:</label><br>
+    <input type="text" id="checkInDate" name="checkInDate"><br>
+    <label for "checkOutDate">Check Out Date:</label><br>
+    <input type="text" id="checkOutDate" name="checkOutDate"><br>
+    <label for "id_guest">ID Guest:</label><br>
+    <input type="text" id="id_guest" name="id_guest"><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+

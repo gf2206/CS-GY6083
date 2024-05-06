@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Room Type</title>
+</head>
+<body>
+
+<h1>New Room Type</h1>
+<p>Use this web interface to add new room type to the room inventory.</p>
+<br>
+<br>
+<p>Use 0 or 1 to indciate ADA Compliance Status (0 for No, 1 for Yes).</p>
+<br>
+</body>
+</html>
+
+<form action="newroomtype.php">
+    <label for "roomTypeName">New Room Type Name:</label><br>
+    <input type="text" id="roomTypeName" name="roomTypeName"><br>
+    <label for "roomTypeDesc">New Room Type Description:</label><br>
+    <input type="text" id="roomTypeDesc" name="roomTypeDesc"><br>
+    <label for "rate">New Room Rate:</label><br>
+    <input type="text" id="rate" name="rate"><br>
+    <label for "adaCompliant">ADA Compliant?:</label><br>
+    <input type="text" id="adaCompliant" name="adaCompliant"><br>
+    <input type="submit" value="Submit">
+</form>
